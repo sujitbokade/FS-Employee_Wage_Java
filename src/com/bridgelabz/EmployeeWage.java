@@ -1,10 +1,11 @@
 package com.bridgelabz;
 
 public class EmployeeWage {
-    static final int Employee_Full_Time=1;
-    static final int IS_Part_Time=2;
-    static final int Wage_per_Hr=20;
-        public static void main(String[] args) {
+        static final int Employee_Full_Time=1;
+        static final int IS_Part_Time=2;
+        static final int Wage_per_Hr=20;
+        static final int Days_Per_Month=20;
+    public static void main(String[] args) {
         System.out.println("Welcome to Employee Wage !");
         double empCheck=Math.floor(Math.random()*10) % 3;
         int dailywage=0;
@@ -22,7 +23,8 @@ public class EmployeeWage {
                 System.out.println("Employee is Absent");
         }
         int wage= dailywage * Wage_per_Hr;
-        System.out.println("Daily Wage is "+wage);
+        int Total_Wage=Days_Per_Month * wage;
+        System.out.println("Daily Wage is "+Total_Wage);
         }
     }
 
